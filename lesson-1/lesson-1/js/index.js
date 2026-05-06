@@ -32,9 +32,10 @@
         function updateName()
         {
             // STEP 4a: Display a prompt asking for input, and assign the input to a variable using let
-			
+			let firstName = prompt('please enter your first name');
+
 			// STEP 4b: Grab the input from the variable and build a new string, then change the text inside the EM element, using the textContent property
-			
+			element.textContent = firstName;
 		
         }
 		
