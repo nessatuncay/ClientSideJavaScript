@@ -33,11 +33,15 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
-let characterName;
-let age;
-let isSuperhero;
-let specialPowers;
-let favoriteFood;
+let characterName = document.querySelector('#characterName');
+let age = document.querySelector('#age');
+let isSuperhero = document.querySelector('#isSuperhero');
+let specialPowers = document.querySelector('#specialPowers');
+let favoriteFood = document.querySelector('#favoriteFood');
+
+let generateButton = document.querySelector('#generateButton');
+let increaseAgeButton = document.querySelector('#increaseAgeButton');
+let decreaseAgeButton = document.querySelector('#decreaseAgeButton');
 
 characterName = '';
 age = Math.floor(Math.random() * 1000) + 1;
@@ -45,16 +49,41 @@ isSuperhero = false;
 specialPowers = ['Super Speed', 'Super Strength', 'Elacticity', 'Pyrokinesis', 'Telepathy'];
 favoriteFood = '';
 
+
 // Function to generate a random character description
 
+function generateCharDesc()
+{
+    let description = `Your character is ${characterName} and they are ${age} years old. Their superpower is ${specialPowers} and their favorite food is ${favoriteFood}.` 
+    return description;
+}
 
 // Functions to update character's age
+function increaseAge()
+{
+    age++;
+    return age;
+}
 
-
+function decreaseAge()
+{
+    age--;
+    return age;
+}
 
 
 // Function to update the character's description after changing age
-
+function changeAge()
+{
+    if (age++ || age--)
+    {
+        let updatedDescription = generateCharDesc();
+        return updatedDescription;
+    }
+}
 
 // Add event listeners for buttons using querySelector
 
+increaseAgeButton.addEventListener('click', increaseAge);
+decreaseAgeButton.addEventListener('click', decreaseAge);
+generateButton.addEventListener('click', generateCharDesc);
