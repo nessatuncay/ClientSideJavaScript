@@ -69,13 +69,15 @@ function generateCharDesc()
 function increaseAge()
 {
     age++;
-    return age;
+    ageInput.value = age;
+    generateCharDesc();
 }
 
 function decreaseAge()
 {
     age--;
-    return age;
+    ageInput.value = age;
+    generateCharDesc();
 }
 
 
