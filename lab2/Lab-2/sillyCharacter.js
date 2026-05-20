@@ -55,8 +55,14 @@ ageInput.value = age;
 
 function generateCharDesc()
 {
+    characterName = characterNameInput.value;
+    age = ageInput.value;
+    isSuperhero = isSuperheroInput.checked;
+    specialPowers = specialPowersInput.value;
+    favoriteFood = favoriteFoodInput.value;
+
     let description = `Your character is ${characterName} and they are ${age} years old. Their superpower is ${specialPowers} and their favorite food is ${favoriteFood}.` 
-    return description;
+    characterDescription.textContent = description;
 }
 
 // Functions to update character's age
