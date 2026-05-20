@@ -33,11 +33,11 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
-let characterName = document.querySelector('#characterName');
-let age = document.querySelector('#age');
-let isSuperhero = document.querySelector('#isSuperhero');
-let specialPowers = document.querySelector('#specialPowers');
-let favoriteFood = document.querySelector('#favoriteFood');
+let characterNameInput = document.querySelector('#characterName');
+let ageInput = document.querySelector('#age');
+let isSuperheroInput = document.querySelector('#isSuperhero');
+let specialPowersInput = document.querySelector('#specialPowers');
+let favoriteFoodInput = document.querySelector('#favoriteFood');
 
 let generateButton = document.querySelector('#generateButton');
 let increaseAgeButton = document.querySelector('#increaseAgeButton');
@@ -49,6 +49,7 @@ isSuperhero = false;
 specialPowers = ['Super Speed', 'Super Strength', 'Elacticity', 'Pyrokinesis', 'Telepathy'];
 favoriteFood = '';
 
+ageInput.value = age;
 
 // Function to generate a random character description
 
