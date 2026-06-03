@@ -17,3 +17,34 @@ shieldv.textContent = shield;
 healthv.textContent = health;
 enemyv.textContent = enemyNearby;
 progressv.textContent = missionProgress;
+
+
+if (health < 30)
+{
+    statusv.textContent = "CRITICAL ALERT: Immediate Evacuation Required";
+}
+
+else if (ammo < 5 || shield === false)
+{
+    statusv.textContent = "Warning: Low Resources"
+}
+
+else if (missionProgress >= 1 && missionProgress <= 70)
+{
+    statusv.textContent = "Mission In Progress";
+}
+
+else if (missionProgres > 70 && enemyNearby === false)
+{
+    statusv.textContent = "Approaching Mission Completion";
+}
+
+else if (missionProgress === 100)
+{
+    statusv.textContent = "Mission Complete Successfully";
+}
+
+else
+{
+    statusv.textContent = "System Stable";
+}
