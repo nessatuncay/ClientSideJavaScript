@@ -15,3 +15,4 @@ ammov.textContent = ammo;
 shieldv.textContent = shield;
 healthv.textContent = health;
 enemyv.textContent = enemyNearby;
+progressv.textContent = missionProgress;
