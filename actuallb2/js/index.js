@@ -8,7 +8,7 @@ let enemyNearby = true;
 const ammov = document.querySelector('#ammo-id');
 const shieldv = document.querySelector('#shield-id');
 const healthv = document.querySelector('#health-id');
-const ememyv = document.querySelector('#enemy-id');
+const enemyv = document.querySelector('#enemy-id');
 const progressv = document.querySelector('#progress-id');
 const statusv = document.querySelector('#status-id');
 
@@ -19,7 +19,7 @@ enemyv.textContent = enemyNearby;
 progressv.textContent = missionProgress;
 
 
-if (health < 30)
+if (health < 30 && enemyNearby === true)
 {
     statusv.textContent = "CRITICAL ALERT: Immediate Evacuation Required";
 }
