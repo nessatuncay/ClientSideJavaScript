@@ -10,6 +10,7 @@ const shieldv = document.querySelector('#shield-id');
 const healthv = document.querySelector('#health-id');
 const ememyv = document.querySelector('#enemy-id');
 const progressv = document.querySelector('#progress-id');
+const statusv = document.querySelector('#status-id');
 
 ammov.textContent = ammo;
 shieldv.textContent = shield;
