@@ -34,7 +34,7 @@ else if (missionProgress >= 1 && missionProgress <= 70)
     statusv.textContent = "Mission In Progress";
 }
 
-else if (missionProgres > 70 && enemyNearby === false)
+else if (missionProgress > 70 && enemyNearby === false)
 {
     statusv.textContent = "Approaching Mission Completion";
 }
