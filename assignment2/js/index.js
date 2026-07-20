@@ -9,19 +9,19 @@ const pizzaAmount = document.getElementById("pizza-amount").value;
 const spice = document.getElementById("spice").value;
 const specialInstructions = document.getElementById("special-instructions").value;
 const toppings = Array.from(document.querySelectorAll
-                 ('input[class="toppings"]:checked'))
+                 ('input[id="topping"]:checked'))
                  .map((checkbox) => checkbox.value);
 
-return new Pizza
-{
-    name;
-    address;
-    phoneNumber;
-    pizzaSize;
-    crustType;
-    mainSauce;
-    toppings;
-    pizzaAmount;
-    spice;
-    specialInstructions;
-}
+const pizza = new Pizza
+(
+    name, 
+    address, 
+    phoneNumber, 
+    pizzaSize, 
+    crustType,
+    mainSauce, 
+    toppings, 
+    pizzaAmount, 
+    spice, 
+    specialInstructions
+);
