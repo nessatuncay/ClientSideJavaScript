@@ -28,4 +28,6 @@ const pizza = new Pizza
     specialInstructions
 );
 
+    document.getElementById("order-summary").textContent = pizza.getOrder();
+
 });
