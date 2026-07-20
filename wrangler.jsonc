@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "clientsidejavascript",
+  "compatibility_date": "2026-07-20",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "actuallb2"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
