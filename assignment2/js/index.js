@@ -1,4 +1,6 @@
 
+document.getElementById("order-button").addEventListener("click", () =>
+{
 const name = document.getElementById("name").value;
 const address = document.getElementById("address").value;
 const phoneNumber = document.getElementById("phone").value;
@@ -25,3 +27,5 @@ const pizza = new Pizza
     spice, 
     specialInstructions
 );
+
+});
